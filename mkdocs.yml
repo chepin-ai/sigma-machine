@@ -1,0 +1,76 @@
+site_name: Sigma Machine
+site_description: Universal Computational Architecture for the Isomorphism Principle
+site_author: Sigma Machine Research Group
+site_url: https://chepin-ai.github.io/sigma-machine
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Theory:
+    - Isomorphism Principle: theory/isomorphism_principle.md
+    - Five Axioms: theory/axioms.md
+    - Five Isomorphisms: theory/isomorphisms.md
+    - Critical Operator Triad: theory/cot.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Core: architecture/core.md
+    - Composer: architecture/composer.md
+  - API Reference:
+    - Distinguishability: api/distinguishability.md
+    - Sigma Machine: api/sigma_machine.md
+  - Breakthroughs:
+    - Derived Isomorphisms: breakthroughs/derived.md
+    - Experimental Metamathematics: breakthroughs/experimental.md
+    - Information Proof of RH: breakthroughs/information_proof.md
+    - Criticality Principle: breakthroughs/criticality.md
+    - Unification: breakthroughs/unification.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md

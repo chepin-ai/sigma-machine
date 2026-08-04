@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Sigma Machine: Universal Computational Architecture for the Isomorphism Principle"
+authors:
+  - family-names: "Sigma Machine Research Group"
+repository-code: "https://github.com/yourusername/sigma-machine"
+version: 1.0.0
+date-released: 2026-08-02
+license: MIT
+keywords:
+  - riemann-hypothesis
+  - quantum-computing
+  - category-theory
+  - noncommutative-geometry
+  - langlands-program
+  - dynamical-quantum-phase-transitions
